@@ -15,7 +15,7 @@ export default {
   coverageProvider: 'v8',
   preset: 'ts-jest',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
-  testMatch: ['**/?(*.)+(test.ts)'],
+  testMatch: ['<rootDir>/src/**/?(*.)+(test.ts)'],
   transform: {
     '^.+\\.(t|j)sx?$': ['@swc/jest'],
   },

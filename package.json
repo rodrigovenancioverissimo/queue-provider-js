@@ -17,8 +17,9 @@
     "build:types": "node tools/cleanup types && tsc -p config/tsconfig.types.json",
     "clean": "node tools/cleanup",
     "package": "npm run build && npm pack",
-    "test": "jest --no-cache --runInBand --detectOpenHandles",
+    "test": "jest --no-coverage --runInBand --detectOpenHandles",
     "test:cov": "jest --coverage --no-cache --runInBand",
+    "test:unit": "jest --no-coverage --runInBand --testMatch **/*.unit.test.ts",
     "addscope": "node tools/packagejson name @rodrigovenancioverissimo/queue-provider-js"
   },
   "engines": {

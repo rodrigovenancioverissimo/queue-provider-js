@@ -1,7 +1,7 @@
 import SQS from 'aws-sdk/clients/sqs';
 import { Consumer } from 'sqs-consumer';
 
-export default interface QueueProviderJsInterface {
+export declare class QueueProviderJsInterface {
   sendMessage(params: SendMessage.Input): Promise<SendMessage.Output>;
   createQueue(params: CreateQueue.Input): Promise<CreateQueue.Output>;
   checkQueueExists(params: CheckQueueExists.Input): Promise<boolean>;

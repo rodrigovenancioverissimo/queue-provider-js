@@ -1,14 +1,14 @@
 import createQueueFactory from '../../factories/createQueueFactory';
-import QueueProviderSqs from './QueueProviderSqs';
+import QueueProviderJsSqs from './QueueProviderJsSqs';
 import { Consumer } from 'sqs-consumer';
 import faker from '@faker-js/faker';
-import QueueProviderJsInterface from '../../QueueProviderJsInterface';
+import { QueueProviderJsInterface } from '../../QueueProviderJsInterface';
 
 let queueProvider: QueueProviderJsInterface;
 const queueName = 'queue-name';
-describe('QueueProviderSqs', () => {
+describe('QueueProviderJsSqs', () => {
   beforeAll(() => {
-    queueProvider = new QueueProviderSqs();
+    queueProvider = new QueueProviderJsSqs();
   });
 
   it('should be able to create a new queue', async () => {

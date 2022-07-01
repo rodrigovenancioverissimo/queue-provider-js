@@ -1,4 +1,5 @@
-import QueueProviderJsInterface, {
+import {
+  QueueProviderJsInterface,
   CheckQueueExists,
   CreateConsumer,
   CreateQueue,
