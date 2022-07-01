@@ -1,7 +1,6 @@
 const settings = {
   environment:
     process.env.QPJS_NODE_ENV || process.env.NODE_ENV || 'development',
-  selector: process.env.QPJS_SELECTOR || 'sqs',
   aws: {
     sqs: {
       endpoint:
@@ -24,7 +23,7 @@ const settings = {
     accountId:
       process.env.QPJS_AWS_ACCOUNT_ID ||
       process.env.AWS_ACCOUNT_ID ||
-      'accountId',
+      '000000000000',
   },
 };
 

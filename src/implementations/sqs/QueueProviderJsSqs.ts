@@ -101,7 +101,8 @@ class QueueProviderSqs implements QueueProviderJsInterface {
   }
 
   private getEndpoint(queueName: string): string {
-    return `${settings.aws.sqs.endpoint}/${settings.aws.accountId}/${queueName}`;
+    const url = `${this.client.endpoint.href}${settings.aws.accountId}/${queueName}`;
+    return url;
   }
 }
 
