@@ -14,7 +14,7 @@ Suporte as implementações:
 A seguir, temos um exemplo de uso do provider com SQS. As configurações até o momento são passadas via variável de ambiente.
 
 ```TypeScript
-import QueueProviderSqs from 'queue-provider-js';
+import { QueueProviderJsSqs } from 'queue-provider-js';
 
 async function main() {
   const queueProvider = new QueueProviderSqs();

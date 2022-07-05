@@ -11,14 +11,12 @@ export declare class QueueProviderJsInterface {
 
 export namespace SendMessage {
   export type Input = {
-    body: QueueBodyType;
+    body: any;
     queueName: string;
   };
   export type Output = {
     id: string;
   };
-  type QueueBodyType = JsonType | JsonType[];
-  type JsonType = Object | string | number | boolean | null;
 }
 
 export namespace CreateQueue {
